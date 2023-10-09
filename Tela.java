@@ -18,7 +18,7 @@ public class Tela extends JFrame{
     final Color amareloCalculadora = new Color(253, 255, 194);
     final Color cianoEscuroCalculadora = new Color(45, 91, 75);
     final Color cinzaCalculadora = new Color(227, 227, 227);
-    final Color verdeCalculadora = new Color(102, 248, 222);
+    final Color verdeCalculadora = new Color(102, 248, 160);
     static Calculadora ca;
     static String calculo;
     static String historico;
@@ -63,15 +63,15 @@ public class Tela extends JFrame{
             tecla = new JButton();
             tecla.setText(teclado[i]);
 
-            if (i < 4 || i == 7 || i == 11 || i == 15) {
-                tecla.setBackground(azulCalculadora);
+            if (teclado[i].matches("[\\d]")) {
+                tecla.setBackground(cinzaCalculadora);
 
             } else if(i == 19) {
                 tecla.setBackground(verdeCalculadora);
             } else if (i > 16 && i < 19) {
                 tecla.setBackground(amareloCalculadora);
             } else{
-                tecla.setBackground(cinzaCalculadora);
+                tecla.setBackground(azulCalculadora);
             }
             tecla.setPreferredSize(new Dimension(100, 50));
             tecla.setFont(new Font("Arial", Font.BOLD, 15 ));
