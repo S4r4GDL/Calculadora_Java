@@ -15,8 +15,7 @@ public class Tela extends JFrame{
     protected JTextField escreveTf;
     final int L = 2;
     final Color azulCalculadora = new Color(174, 238, 232);
-    final Color amareloCalculadora = new Color(253, 255, 194);
-    final Color cianoEscuroCalculadora = new Color(45, 91, 75);
+    final Color amareloCalculadora = new Color(252, 255, 142);
     final Color cinzaCalculadora = new Color(227, 227, 227);
     final Color verdeCalculadora = new Color(102, 248, 160);
     static Calculadora ca;
@@ -48,6 +47,7 @@ public class Tela extends JFrame{
     {
         f.setSize(411,411);
         f.setResizable(false);
+        f.setLocationRelativeTo(null);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setVisible(true);
     }
